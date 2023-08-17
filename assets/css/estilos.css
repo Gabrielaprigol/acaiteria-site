@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Quicksand";
+}
+
+.container {
+    width: 1240px;
+    max-width: 100%;
+    margin: auto;
+}
+
+/* navegação */
+#nav {
+    background-color: #874f84;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav ul li {
+    list-style: none;
+    /*remove as bolinhas*/
+    display: inline;
+    /* horizontal*/
+    padding: 5px 0px;
+    /*espaço interno*/
+    margin: 0 5px;
+    /*espaço externo*/
+}
+
+#nav ul#menu li {
+    float: left;
+    /*ir para o lado ou outro*/
+    border-radius: 8px;
+    /*bordinha redonda*/
+}
+
+
+.clearfix::before,
+.clearfix::after {
+    /*arruma para dentro da cor*/
+    content: "";
+    display: block;
+    clear: both;
+}
+
+
+
+#nav ul li a {
+    padding: 0 10px;
+    color: white;
+    text-decoration: none;
+}
+
+#nav ul#menu li.active {
+    background-color: #683265;
+}
+
+#nav ul#menu li:hover {
+    background-color: #351834;
+}
+
+.gold {
+    background-color: #c589c1;
+}
+
+/*banner atrás*/
+.banner {
+    position: relative;
+}
+
+.margin {
+    margin-top: 20px;
+    text-transform: uppercase;
+
+}
+
+.banner::before {
+    content: "";
+    background-image: url(img/açai.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    position: absolute;
+    opacity: 0.2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
+:root {
+    --fonte-principal: 'Lora';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--fonte-principal), cursive;
+}
+
+
+section {
+    padding-bottom: 20px;
+}
+
+blockquote,
+p,
+hr {
+    margin-bottom: 10px;
+}
+
+section h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+[class*="col-"] {
+    float: left;
+    padding-right: 10px;
+}
+
+/*Grid com 12 colunas*/
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 24.99%;
+}
+
+.col-4 {
+    width: 33.32%;
+}
+
+.col-5 {
+    width: 41.65%;
+}
+
+.col-6 {
+    width: 49.98%;
+}
+
+.col-7 {
+    width: 58.31%;
+}
+
+.col-8 {
+    width: 66.64%;
+}
+
+.col-9 {
+    width: 74.97%;
+}
+
+.col-10 {
+    width: 83.3%;
+}
+
+.col-11 {
+    width: 91.63%;
+}
+
+.col-12 {
+    width: 99.96%;
+}
+
+/*seção alimentos*/
+#açai img {
+    height: 250px;
+}
+
+#açai h6 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: #683265;
+    border-radius: 0 0 9px 9px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+/*ajuste nas imagens*/
+img {
+    width: 100%;
+}
+
+img.img_ajuste {
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+    position: relative;
+    object-position: center;
+}
+
+
+
+img.top {
+    object-position: top;
+}
+
+img.img_logo {
+    width: 150px;
+    float: right;
+}
+
+.center {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 18px;
+    color: aliceblue;
+    background-color: #885685;
+    border-radius: 5px;
+    font-weight: normal;
+    padding: 5px;
+    padding-top: 20px;
+
+}
+
+img.img_ajustar {
+    object-fit: cover;
+    border-radius: 10px;
+    position: relative;
+    object-position: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    width: 1130px;
+    height: 400px;
+}
+
+
+.rodape {
+    background-color: #582f56;
+    color: white;
+    height: auto;
+    width: 100%;
+    font-size: 14px;
+    font-family: helvetica;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape p {
+    margin-bottom: 5px;
+}
+
+.rodape-div {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: auto;
+    align-items: stretch;
+    padding: 60px 10px 40px 10px;
+}
+
+.rodape-div-1,
+.rodape-div-2,
+.rodape-div-4 {
+    display: flex;
+    width: calc(100% / 4 - 20px);
+    padding: 10px;
+}
+
+.rodape span {
+    font-size: 20px;
+    color: white;
+}
+
+.rodape-black {
+    width: calc(100% - 20px);
+    background-color: black;
+    padding: 10px;
+    margin: 0px;
+    text-align: center;
+}
+
+.rodape-div {
+    padding: 30px 0px 20px 430px;
+}
